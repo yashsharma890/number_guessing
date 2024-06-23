@@ -11,5 +11,5 @@ CREATE TABLE users (
 CREATE TABLE games (
   game_id SERIAL PRIMARY KEY,
   user_id INT REFERENCES users(user_id),
-  guesses INT NOT NUL
+  guesses INT NOT NULL
 );
